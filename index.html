@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wall of Shames: Share Your Secrets Anonymously | Anonymous Post Submission</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+     
+     <div class="container">
+     <div class="image-container">
+     <div class="image-container2">
+              
+        <h1>Wall of Shames</h1>
+        <p class="tagline">
+            Welcome to the Wall of Shames, a safe space where you can anonymously share your deepest thoughts, secrets, and regrets without fear of judgment.                                Whether you've done something embarrassing, made a mistake, or just need to get something off your chest, this is the place to do it.                                                               Your anonymity is guaranteed, so feel free to be completely honest. Share your story, and know that you're not alone.
+        </p>
+
+
+         <h2>How It Works</h2>
+         <h3>Step 1: Write Your Secret</h3>
+         <h3>Step 2: Post Anonymously</h3>
+         <h3>Step 3: Engage with Others Posts</h3>
+         <h3>Step 4: Have the Chance to Win 3 Ethereum</h3>
+        <!-- Submission Form -->
+        <div class="form-section">
+            <textarea id="shame-text" placeholder="Write your shame or thought here..."></textarea>
+            <button onclick="submitShame()">Post Anonymously</button>
+        </div>
+
+        <!-- Display Posts -->
+        <div id="posts-container"></div>
+        <div id="pagination"></div>
+
+    </div>
+<!-- Affiliate Links Section -->
+  <div id="affiliate-links" class="affiliate-links">
+    
+    <div class="affiliate-link-item">
+        <a href="YOUR_AFFILIATE_LINK" target="_blank">
+            <img src="PRODUCT_IMAGE_URL" alt="Product Name">
+            <p>Product 1 Description</p>
+        </a>
+    </div>
+    <div class="affiliate-link-item">
+        <a href="link del affiliate">
+            <img src="PRODUCT_IMAGE_URL" alt="Product Name">
+            <p>Product 2 Description</p>
+        </a>
+    </div>
+    <!-- Add more affiliate links as needed -->
+</div>
+
+    <!-- Firebase & Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+          
+        </div>
+    </div>      
+</body>
+</html>
+<!-- Leaderboard Section -->
+<div id="leaderboard" class="leaderboard">
+    <h2>Top 5 Posts</h2>
+    <div id="top-posts"></div>
+</div>
+
+ <div class="sidebar">
+     <h2>Win 3 Ethereum</h2>
+     <p id="countdown">Time Remaining: --d --h --m --s</p>         
+     <a href="instructions.html" class="btn">View Instructions</a>
+ </div>
+<footer>
+    <p>&copy; 2025 WallofShames. All Rights Reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-and-conditions.html">Terms and Conditions</a> | <a href="about-us.html">About Us</a> | <a href="contact.html">Contact</a></p>
+</footer>
+
+        

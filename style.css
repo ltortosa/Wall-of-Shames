@@ -1,0 +1,382 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #1a1a1a; /* Dark background for contrast */
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #2d2d2d; /* Dark container background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+
+}
+.image-container {
+    background-image: url('images/anonymous-sharing.jpg');
+    background-size: 16%;
+    background-position: 5% top;
+    background-repeat:no-repeat;
+    padding: 20px;
+    color: white;
+}
+/* Accessibility: Add a visually hidden alt text */
+.image-container2::after {
+    content: "anonymous-sharing image"; 
+    position: absolute;
+    left: -9999px; /* Hide it off-screen for screen readers */
+    visibility: hidden;
+}
+
+.image-container h1, .image-container p, .image-container .form-section, .image-container #posts-container {
+     z-index: 1;
+}
+.image-container2 {
+    background-image: url('images/wall-of-shames-background.jpg');
+    background-size: 25%;
+    background-position: right 15%  top 23%; /* Moves left & keeps it lower */
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: white;
+    position: relative; /* Ensures correct layering */
+}
+
+/* Accessibility: Add a visually hidden alt text */
+.image-container2::after {
+    content: "Wall of Shame background image"; 
+    position: absolute;
+    left: -9999px; /* Hide it off-screen for screen readers */
+    visibility: hidden;
+}
+
+.image-container2 h1, .image-container p, .image-container .form-section, .image-container #posts-container {
+     z-index: 1;
+}
+
+h1 {
+  color: white; /* Title in white */
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.tagline {
+  color: #cccccc; /* Lighter gray for subtitle */
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-section textarea {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+  padding: 10px;
+  background: #404040; /* Dark textarea background */
+  border: 1px solid #666;
+  color: white; /* White text input */
+  border-radius: 5px;
+}
+
+button {
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ff3333; /* Hover effect */
+}
+
+.post {
+  background: #404040; /* Dark post background */
+  margin: 15px 0;
+  padding: 15px;
+  border-left: 4px solid #ff4444;
+  border-radius: 5px;
+  color: white; /* White post text */
+}
+h1 {
+  font-family: 'Creepster', cursive;
+  font-size: 4em;
+  text-shadow: 2px 2px 0px #000;
+}
+.vote-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.vote-section button {
+  background: #ff4444;
+  width: auto;
+  padding: 5px 10px;
+  font-size: 1.2em;
+}
+
+.vote-count {
+  color: white;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+}
+/* style.css */
+.post {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.vote-count {
+    transition: color 0.3s ease;
+}
+
+.vote-count.updated {
+    color: #4caf50;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.leaderboard {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.leaderboard h2 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.leaderboard .post-summary {
+    background:black;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+.leaderboard .post-summary p {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.leaderboard .post-summary button {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.post-container p {
+    color: white;
+}
+
+.post-container {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.vote-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.vote-section button {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.vote-count {
+    color: white;
+    font-weight: bold;
+    min-width: 30px;
+    text-align: center;
+}
+.sidebar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 15%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.sidebar .btn:hover {
+    background-color: #e0897a;
+}
+.instructions-container {
+    color: yellow;
+    display: grid;
+    place-items: center; /* Centers both horizontally and vertically */
+    height: 100%;
+}
+.instructions-container img {
+    max-width: 35%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px; /* Space between buttons */
+}
+
+.pagination-btn {
+    background-color: #333;  /* Dark color for contrast */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.pagination-btn:hover {
+    background-color: #555; /* Slightly lighter on hover */
+}
+
+.pagination-btn:disabled {
+    background-color: #aaa; /* Greyed out when disabled */
+    cursor: not-allowed;
+}
+
+.pagination-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+}
+.affiliate-links {
+    background-color: grey;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.affiliate-links h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.affiliate-link-item {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.affiliate-link-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.affiliate-link-item p {
+    font-size: 14px;
+    color: #444;
+    margin-top: 10px;
+}
+
+.affiliate-link-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.affiliate-link-item a:hover {
+    opacity: 0.8;
+}
+
+
+p {
+    line-height: 1.6;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
